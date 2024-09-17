@@ -1,7 +1,6 @@
 import {
 	Box,
 	Text,
-	Select,
 	Stack,
 	Button,
 	Flex,
@@ -12,10 +11,8 @@ import {
 	GridItem,
 	Divider,
 	Image,
-	Progress,
 	Heading,
 	Avatar,
-	border,
 	MenuButton,
 	Menu,
 	Link
@@ -349,7 +346,7 @@ function HomePage() {
 									</Box>
 								</Flex>
 								<Flex justifyContent={"space-between"} my={'30px'} alignItems={"center"}>
-									<Text fontSize={{base: '3.2vw',md: '2vw' , lg: '1.2vw'}}>Support Tickets</Text>
+									<Text fontSize={{ base: '3.2vw', md: '3vw', lg: '3vw', xl: '1.3vw' }}>Support Tickets</Text>
 									<Button borderRadius={30} px={5} bg={'#F4F7FE'} color={'#4318FF'}>View All</Button>
 								</Flex>
 								<Stack gap={3}>
@@ -371,7 +368,7 @@ function HomePage() {
 									/>
 								</Stack>
 								<Flex justifyContent={"space-between"} my={'30px'} alignItems={"center"}>
-									<Text fontSize={{base: '3.2vw',md: '2vw' , lg: '1.2vw'}}>Open Tickets</Text>
+									<Text fontSize={{ base: '3.2vw', md: '3vw', lg: '3vw', xl: '1.3vw' }}>Open Tickets</Text>
 									<Button borderRadius={30} px={5} bg={'#F4F7FE'} color={'#4318FF'}>View All</Button>
 								</Flex>
 								<Stack gap={3}>
@@ -394,7 +391,7 @@ function HomePage() {
 								</Stack>
 
 								<Flex justifyContent={"space-between"} my={'30px'} alignItems={"center"}>
-									<Text fontSize={{base: '3.2vw',md: '2vw' , lg: '1.2vw'}}>In Progress</Text>
+									<Text fontSize={{ base: '3.2vw', md: '3vw', lg: '3vw', xl: '1.3vw' }}>In Progress</Text>
 									<Button borderRadius={30} px={5} bg={'#F4F7FE'} color={'#4318FF'}>View All</Button>
 								</Flex>
 								<Stack gap={3}>
@@ -418,7 +415,7 @@ function HomePage() {
 									/>
 								</Stack>
 								<Flex justifyContent={"space-between"} my={'30px'} alignItems={"center"}>
-									<Text fontSize={{base: '3.2vw',md: '2vw' , lg: '1.2vw'}}>Solved</Text>
+									<Text fontSize={{ base: '3.2vw', md: '3vw', lg: '3vw', xl: '1.3vw' }}>Solved</Text>
 									<Button borderRadius={30} px={5} bg={'#F4F7FE'} color={'#4318FF'}>View All</Button>
 								</Flex>
 								<Stack gap={3}>
@@ -441,7 +438,7 @@ function HomePage() {
 								</Stack>
 
 								<Flex justifyContent={"space-between"} my={'30px'} alignItems={"center"}>
-									<Text fontSize={{base: '3.2vw',md: '2vw' , lg: '1.2vw'}}>Compliance Status</Text>
+									<Text fontSize={{ base: '3.2vw', md: '3vw', lg: '3vw', xl: '1.3vw' }}>Compliance Status</Text>
 									<Button borderRadius={30} px={5} bg={'#F4F7FE'} color={'#4318FF'}>View All</Button>
 								</Flex>
 								<Stack gap={3}>

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import { Box, Flex, Text, VStack, useTheme } from '@chakra-ui/react';
+import { Box, Flex, useTheme } from '@chakra-ui/react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import CustomLegend from '../CustomLegend/CustomLegend';
-
 
 const percentagePlugin = {
     id: 'percentageLabels',
@@ -13,37 +12,31 @@ const percentagePlugin = {
             const meta = chart.getDatasetMeta(i);
             if (!meta.hidden) {
                 meta.data.forEach((element, index) => {
-                    // Draw text in center, ensure font is loaded
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'middle';
 
                     const dataString = dataset.data[index].toString() + '%';
 
-                    // Calculate position of text
                     const position = element.tooltipPosition();
                     const radius = element.outerRadius;
                     const centerAngle = element.startAngle + (element.endAngle - element.startAngle) / 2;
                     const x = position.x + (radius / 4) * Math.cos(centerAngle);
                     const y = position.y + (radius / 4) * Math.sin(centerAngle);
 
-                    // Draw background circle
                     ctx.beginPath();
                     ctx.arc(x, y, radius/5, 0, Math.PI * 2); 
                     ctx.fillStyle = '#ECEAF8'; 
                     ctx.fill();
 
-                    // Optionally add shadows
                     ctx.shadowColor = 'rgba(0,0,0,0.25)';
                     ctx.shadowBlur = 4;
                     ctx.shadowOffsetX = 2;
                     ctx.shadowOffsetY = 2;
 
-                    // Draw text
                     ctx.font = `bold ${radius/7}px Arial`;
-                    ctx.fillStyle = 'black'; // Text color
+                    ctx.fillStyle = 'black'; 
                     ctx.fillText(dataString, x, y);
 
-                    // Reset shadow
                     ctx.shadowColor = 'transparent';
                 });
             }
@@ -57,7 +50,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const DonutChartComponent = ({labels}) => {
     const theme = useTheme(); 
     const colors = [
-        theme.colors.purple[400], // Petcare
+        theme.colors.purple[400],  // Petcare
         theme.colors.blue[500],    // Entertainment
         theme.colors.orange[400],  // Event
         theme.colors.pink[500],    // Healthcare
@@ -69,7 +62,7 @@ const DonutChartComponent = ({labels}) => {
         labels: labels,
         datasets: [
             {
-                data: [30, 5, 20, 20, 15, 10], // percentages
+                data: [30, 5, 20, 20, 15, 10], 
                 backgroundColor: colors,
                 hoverOffset: 4
             }

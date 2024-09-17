@@ -5,18 +5,18 @@ import App from './App.jsx'
 import './index.css';
 
 const theme = extendTheme({
-  colors: {
-    myYellow: '#FBBC05'
-  },
-  shadows: {
-    custom: '0px 20px 20px #7090B01F',
-  },
+	colors: {
+		myYellow: '#FBBC05'
+	},
+	shadows: {
+		custom: '0px 20px 20px #7090B01F',
+	},
 })
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  </StrictMode>,
+	<StrictMode>
+		<ChakraProvider theme={theme}>
+			<App />
+		</ChakraProvider>
+	</StrictMode>,
 )

@@ -1,19 +1,18 @@
 import React from 'react';
-import { 
-  Box, 
-  Flex, 
-  IconButton, 
-  VStack, 
-  Spacer, 
-  useColorModeValue 
+import {
+    Box,
+    Flex,
+    IconButton,
+    VStack,
+    Spacer,
 } from '@chakra-ui/react';
-import { 
-  FiMenu, 
-  FiHome, 
-  FiArchive, 
-  FiMessageSquare, 
-  FiSettings, 
-  FiHelpCircle 
+import {
+    FiMenu,
+    FiHome,
+    FiArchive,
+    FiMessageSquare,
+    FiSettings,
+    FiHelpCircle
 } from 'react-icons/fi';
 
 const Sidebar = () => {
@@ -36,10 +35,10 @@ const Sidebar = () => {
         >
             <Flex direction="column" align="center" h="full" gap={2}>
                 <Flex width={'100%'}>
-                    { isActive('/menu') ?
+                    {isActive('/menu') ?
                         <Box bg={'black'} width={'1px'} borderRightRadius={15}>
                         </Box>
-                        : 
+                        :
                         <Box width={1} borderRightRadius={15}>
                         </Box>
                     }
@@ -56,12 +55,12 @@ const Sidebar = () => {
 
                 <VStack spacing="2" align="stretch" flex="1" width={'100%'}>
                     <Flex>
-                        { isActive('/') ?
+                        {isActive('/') ?
                             <Box bg={'black'} width={1} borderRightRadius={15}>
                             </Box>
-                          : 
-                          <Box width={1} borderRightRadius={15}>
-                        </Box>
+                            :
+                            <Box width={1} borderRightRadius={15}>
+                            </Box>
                         }
                         <IconButton
                             aria-label="Home"
@@ -74,7 +73,7 @@ const Sidebar = () => {
                         />
                     </Flex>
                     <Flex>
-                        { isActive('/archive') ?
+                        {isActive('/archive') ?
                             <Box bg={'black'} width={1} borderRightRadius={15}>
                             </Box>
                             : <Box width={1} borderRightRadius={15}></Box>
@@ -90,7 +89,7 @@ const Sidebar = () => {
                         />
                     </Flex>
                     <Flex>
-                        { isActive('/messages') ?
+                        {isActive('/messages') ?
                             <Box bg={'black'} width={1} borderRightRadius={15}>
                             </Box>
                             : <Box width={1} borderRightRadius={15}></Box>
