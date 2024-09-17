@@ -65,7 +65,7 @@ function HomePage() {
 								<MenuButton as={Button} bg={'#FFFFFF'} rightIcon={<ChevronDownIcon />}>
 									<Flex gap={3}>
 										<Image
-											src="./src/assets/calendar_month.svg"
+											src="./calendar_month.svg"
 											borderColor={'#89B0EB'}
 										/>
 										<Text fontWeight={200}>This Year</Text>
@@ -119,7 +119,7 @@ function HomePage() {
 											<DashCards
 												title="Rs. xxx.xx"
 												heading="Total Service Provider"
-												topImg='./src/assets/Icon-frame.png'
+												topImg='./Icon-frame.png'
 												color="yellow"
 												stat="+5%"
 											/>
@@ -132,7 +132,7 @@ function HomePage() {
 											<DashCards
 												heading="New Service Provider"
 												title="xxxx"
-												topImg='./src/assets/Icon-frame2.png'
+												topImg='./Icon-frame2.png'
 												color="red"
 												stat="-10%"
 											/>
@@ -145,7 +145,7 @@ function HomePage() {
 											<DashCards
 												heading="Active Service Provider"
 												title="xxxx"
-												topImg='./src/assets/Icon-frame3.png'
+												topImg='./Icon-frame3.png'
 												color="green"
 												stat="+10%"
 											/>
@@ -157,7 +157,7 @@ function HomePage() {
 										<CardBody>
 											<Stack>
 												<Flex alignItems="center" gap={5}>
-													<Image src='./src/assets/Icon-frame4.png' width={{ base: "8vw", lg: '4vw' }} />
+													<Image src='./Icon-frame4.png' width={{ base: "8vw", lg: '4vw' }} />
 													<Box>
 														<Text fontSize="lg" color="gray.500">Average Rating</Text>
 														<Flex gap={1}>
@@ -198,9 +198,9 @@ function HomePage() {
 										<CardBody>
 											<DashCards
 												heading="Service Completion Rate"
-												topImg='./src/assets/Icon-frame5.png'
+												topImg='./Icon-frame5.png'
 												color="green"
-												bottomImg='./src/assets/Icon-frame5-1.png'
+												bottomImg='./Icon-frame5-1.png'
 												stat="85% completed"
 												description="from last week"
 												imgW={{ base: "6.5vw", lg: '3.15vw' }}
@@ -213,7 +213,7 @@ function HomePage() {
 										<CardBody>
 											<DashCards
 												heading="Service Provider Retension Rate"
-												topImg='./src/assets/Icon-frame6.png'
+												topImg='./Icon-frame6.png'
 												color="green"
 												stat="+100%"
 											/>
@@ -253,7 +253,7 @@ function HomePage() {
 										}} gap={4}>
 											<GridItem>
 												<ServiceProvideComponent
-													image={"./src/assets/serv1.png"}
+													image={"./serv1.png"}
 													profiles={profiles}
 													additionalCount={200}
 													title={'Construction Sector'}
@@ -262,7 +262,7 @@ function HomePage() {
 											</GridItem>
 											<GridItem>
 												<ServiceProvideComponent
-													image={"./src/assets/serv2.png"}
+													image={"./serv2.png"}
 													profiles={profiles}
 													additionalCount={180}
 													title={'Health Care Sector'}
@@ -271,7 +271,7 @@ function HomePage() {
 											</GridItem>
 											<GridItem>
 												<ServiceProvideComponent
-													image={"./src/assets/serv3.png"}
+													image={"./serv3.png"}
 													profiles={profiles}
 													additionalCount={150}
 													title={'Home Services Sector'}
@@ -280,7 +280,7 @@ function HomePage() {
 											</GridItem>
 											<GridItem>
 												<ServiceProvideComponent
-													image={"./src/assets/serv4.png"}
+													image={"./serv4.png"}
 													profiles={profiles}
 													additionalCount={100}
 													title={'Pet Care Sector'}
@@ -339,7 +339,7 @@ function HomePage() {
 						<Card borderRadius={borderRadius}>
 							<CardBody>
 								<Flex alignItems="center" gap={5} >
-									<Image src='./src/assets/Icon-frame7.png' width={'4vw'} />
+									<Image src='./Icon-frame7.png' width={'4vw'} />
 									<Box>
 										<Heading fontSize={{
 											base: '3vw',

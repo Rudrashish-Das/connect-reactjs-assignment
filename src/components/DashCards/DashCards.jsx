@@ -29,7 +29,7 @@ const DashCards = ({ heading, color, stat, topImg, bottomImg=undefined, title=un
             <Divider my={3}/>
             <Flex alignItems="center" gap={5}>
                 { bottomImg === undefined ? 
-                    <Image src={`./src/assets/${color}-stat.png`} width={imgW}/>
+                    <Image src={`./${color}-stat.png`} width={imgW}/>
                     :
                     <Image src={bottomImg} width={imgW}/>
                 }
